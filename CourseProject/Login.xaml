@@ -1,0 +1,31 @@
+﻿<Window x:Class="CourseProject.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseProject"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800" Background="White">
+    <Grid>
+        <Grid HorizontalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*">
+                </ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Rectangle Fill="#FF4D7B94" HorizontalAlignment="Left" Height="223" Margin="242,101,0,0" VerticalAlignment="Top" Width="317" RadiusX="50" RadiusY="50" Stroke="#FF215B7A" StrokeThickness="3"/>
+            <TextBox x:Name="Login1" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" VerticalAlignment="Top" Width="239" Margin="282,124,0,0" Background="#FFABBEC8" BorderBrush="#FFABADB3" FontFamily="Sylfaen" FontSize="16" TextAlignment="Center" Foreground="#D8595252" FontWeight="Bold" Opacity="0.95" TextChanged="TextBox_TextChanged" BorderThickness="1,1,1,2" Text="Логин" GotFocus="Login1_GotFocus"/>
+            <Button Content="Войти" HorizontalAlignment="Left" Margin="282,214,0,0" VerticalAlignment="Top" Width="239" Height="40" Background="#FF0F3753" FontFamily="Sylfaen" FontSize="16" FontWeight="Bold" Foreground="#FFABBEC8" Click="Button_Click" BorderBrush="#FF0F3753"/>
+            <Button Content="Регистрация" HorizontalAlignment="Left" Margin="282,259,0,0" VerticalAlignment="Top" Width="239" Height="40" Background="#FF0F3753" FontFamily="Sylfaen" FontSize="16" FontWeight="Bold" Foreground="#FFABBEC8" Click="Button_Click_1" BorderBrush="#FF0F3753"/>
+            <PasswordBox x:Name="Password" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="282,169,0,0" VerticalAlignment="Top" Height="40" Width="239" Background="#FFABBEC8" FontFamily="Sylfaen" GotFocus="Password_GotFocus"/>
+            <Label x:Name="passw" Content="Пароль" Margin="371,169,345.8,220" VerticalAlignment="Top" Cursor="IBeam" MouseDown="passw_MouseDown" FontFamily="Sylfaen" Height="31" FontSize="16" FontWeight="Bold" Foreground="#D8595252" RenderTransformOrigin="0.494,0.586"/>
+            <Button Content="Помощь" HorizontalAlignment="Left" Margin="640,373,0,0" VerticalAlignment="Top" Width="81" Height="27" Click="Button_Click_2" Background="#FFABBEC8" Foreground="#FF215B7A" FontWeight="Bold" BorderBrush="#FF215B7A" FontFamily="Sylfaen"/>
+            <Grid HorizontalAlignment="Center" Height="62" Margin="334,22,313.8,0" VerticalAlignment="Top" Width="133">
+                <Label Content="Вход" HorizontalAlignment="Left" Margin="0,-11,0,0" VerticalAlignment="Top" Height="73" Width="119" FontSize="48" FontFamily="Sylfaen" FontWeight="Bold" Foreground="#FF455660"/>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Window>
